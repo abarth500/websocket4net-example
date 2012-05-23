@@ -1,0 +1,17 @@
+﻿<Window x:Class="websocket_example_window.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBox Height="24" HorizontalAlignment="Left" Name="textBox1" VerticalAlignment="Top" Width="427" KeyDown="textBox1_KeyDown" />
+        <Button Content="送信" Height="24" HorizontalAlignment="Right" Name="button1" VerticalAlignment="Top" Width="70" Click="button1_Click" IsEnabled="False" />
+        <TextBox Height="281" HorizontalAlignment="Left" Margin="0,30,0,0" Name="textBox2" VerticalAlignment="Top" Width="503" Text="" DataContext="{Binding}" VerticalScrollBarVisibility="Auto" Foreground="White" FontWeight="Bold">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB06ADF" Offset="0" />
+                    <GradientStop Color="#FF1E1E7A" Offset="1" />
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+    </Grid>
+</Window>
