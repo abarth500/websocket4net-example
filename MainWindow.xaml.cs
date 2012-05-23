@@ -31,7 +31,8 @@ namespace websocket_example_window
             InitializeComponent();
             if (serverURL == "")
             {
-                textBox2.Text += "[エラー]\n";
+                textBox1.Text = "[エラー]";
+                textBox2.Text = "[エラー]\n";
                 textBox2.Text += "　サーバのURLを講義担当者から聞いてserverURL変数にセットしてください\n";
             }
             else
